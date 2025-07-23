@@ -1,52 +1,28 @@
 
-// for(let i = 10; i >= 1; i--){
-//   console.log(i)
-// }
+const counter = document.querySelectorAll(".counter");
 
 
+const arr = Array.from(counter)
 
-// let  i = 10;
+arr.map((item)=>{
+let cout = 0;
 
-// while(i >= 1){
-//     console.log(i)
-//     i--
-// }
+function grethings(){
 
-// let i = 10;
+cout++
+console.log("Habibur Rahman",cout)
 
-// do{
-//     console.log(i)
-//     i--
-// }while(i>=1)
+if(item.dataset.number == cout){
+    clearInterval(tham)
+}
 
+item.innerHTML = cout;
 
-
-
-
-
-let start = 9; 
-
-for(let namta = start; namta <= start + 2; namta++){
-    for(let i = 1; i <= 10; i++){
-        document.write(namta + " X " + i + " = " + (namta * i) + "<br>");
-    }
-    document.write("<br>");
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+const tham = setInterval(grethings, (item.dataset.speed))
+})
 
 
 
