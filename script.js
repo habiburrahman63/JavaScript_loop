@@ -1,29 +1,22 @@
+const Btn = document.querySelector(".Btn")
+const output = document.querySelector(".output")
 
-const counter = document.querySelectorAll(".counter");
+Btn.addEventListener("click", function(){
+    const inputFild = document.querySelector(".inputFild").value;
 
-
-const arr = Array.from(counter)
-
-arr.map((item)=>{
-let cout = 0;
-
-function grethings(){
-
-cout++
-console.log("Habibur Rahman",cout)
-
-if(item.dataset.number == cout){
-    clearInterval(tham)
+    const passwordLenth = 
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890~!@#$%^&*()_+=/.,<>?;:\|"
+    let password = ''
+if(true){
+        for(let i = 0; i < inputFild; i++){
+        const random = (Math.round(Math.random()*passwordLenth.length))
+        const randomPass = passwordLenth[random]
+        
+        password += randomPass;
+        output.innerHTML = password;
+        
+    }
 }
-
-item.innerHTML = cout;
-
-}
-
-
-const tham = setInterval(grethings, (item.dataset.speed))
+    
+    
 })
-
-
-
-
